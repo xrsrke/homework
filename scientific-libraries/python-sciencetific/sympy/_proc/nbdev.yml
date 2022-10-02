@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "learn-sympy"
+  site-url: "https://xrsrke.github.io/learn-sympy"
+  description: "Learn SymPy"
+  repo-branch: master
+  repo-url: "https://github.com/xrsrke/learn-sympy"

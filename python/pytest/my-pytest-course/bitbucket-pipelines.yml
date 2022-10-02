@@ -1,0 +1,28 @@
+image: python:3.8.5
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: Django Company API tests
+          caches:
+            - pip
+          script:
+            - pip install pipenv --upgrade
+            - pipenv install --system
+            - pytest api/coronavstech -s -v --durations=0 --cov=. -m "not skip_in_ci"
+      - step:
+          name: Fibonacci tests
+          caches:
+            - pip
+          script:
+            - pip install pipenv --upgrade
+            - pipenv install --system
+            - pytest fibonacci/ -s -v --durations=0 --cov=.
+
+
+
+
+
+
+

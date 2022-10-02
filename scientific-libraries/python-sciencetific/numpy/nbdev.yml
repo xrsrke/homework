@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "learn-numpy"
+  site-url: "https://xrsrke.github.io/learn-numpy"
+  description: "Learn NumPy"
+  repo-branch: master
+  repo-url: "https://github.com/xrsrke/learn-numpy"

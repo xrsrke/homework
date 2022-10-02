@@ -1,0 +1,1 @@
+[33mWARNING [0m MY_LOG:test_companies.py:76 logged message

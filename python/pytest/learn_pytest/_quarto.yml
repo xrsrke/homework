@@ -1,0 +1,37 @@
+ipynb-filters: [nbdev_filter]
+
+project:
+  type: website
+  output-dir: _docs
+  preview:
+    port: 3000
+    browser: false
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 4
+
+website:
+  title: ""
+  site-url: "https://.github.io/"
+  description: ""
+  twitter-card: true
+  open-graph: true
+  repo-branch: master
+  repo-url: "https://github.com//"
+  repo-actions: [issue]
+  navbar:
+    background: primary
+    search: true
+    right:
+      - icon: github
+        href: "https://github.com//"
+  sidebar:
+    style: "floating"
+
+metadata-files: 
+  - sidebar.yml
+  - custom.yml

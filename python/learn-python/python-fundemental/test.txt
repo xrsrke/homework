@@ -1,0 +1,5 @@
+hello world!
+
+08/15/002022
+
+you're learning python fundamental!the end...

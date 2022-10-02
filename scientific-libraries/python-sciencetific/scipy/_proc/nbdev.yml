@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "learn-scipy"
+  site-url: "https://xrsrke.github.io/learn-scipy"
+  description: "learn scipy"
+  repo-branch: master
+  repo-url: "https://github.com/xrsrke/learn-scipy"
