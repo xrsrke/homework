@@ -1,0 +1,3 @@
+192.168.0.1 someone Contextualize your logger easily
+192.168.0.1 someone_else Inline binding of extra attribute
+192.168.0.1 anybody Use kwargs to add context during formatting: anybody

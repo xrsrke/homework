@@ -1,0 +1,120 @@
+2022-10-27 14:10:25.069 | ERROR    | __main__:<cell line: 1>:1 - An error has been caught in function '<cell line: 1>', process 'MainProcess' (9144), thread 'MainThread' (8681330176):
+Traceback (most recent call last):
+
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+           │         │     └ {'__name__': '__main__', '__doc__': 'Entry point for launching an IPython kernel.\n\nThis is separate from the ipykernel pack...
+           │         └ <code object <module> at 0x7fb34812e190, file "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/ipykernel_launcher.py...
+           └ <function _run_code at 0x7fb3481274c0>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+         │     └ {'__name__': '__main__', '__doc__': 'Entry point for launching an IPython kernel.\n\nThis is separate from the ipykernel pack...
+         └ <code object <module> at 0x7fb34812e190, file "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/ipykernel_launcher.py...
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/ipykernel_launcher.py", line 17, in <module>
+    app.launch_new_instance()
+    │   └ <bound method Application.launch_instance of <class 'ipykernel.kernelapp.IPKernelApp'>>
+    └ <module 'ipykernel.kernelapp' from '/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/ipykernel/kernelapp.py'>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/traitlets/config/application.py", line 846, in launch_instance
+    app.start()
+    │   └ <function IPKernelApp.start at 0x7fb348f59ca0>
+    └ <ipykernel.kernelapp.IPKernelApp object at 0x7fb32003ca90>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/ipykernel/kernelapp.py", line 712, in start
+    self.io_loop.start()
+    │    │       └ <function BaseAsyncIOLoop.start at 0x7fb338101c10>
+    │    └ <tornado.platform.asyncio.AsyncIOMainLoop object at 0x7fb348f564f0>
+    └ <ipykernel.kernelapp.IPKernelApp object at 0x7fb32003ca90>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/tornado/platform/asyncio.py", line 215, in start
+    self.asyncio_loop.run_forever()
+    │    │            └ <function BaseEventLoop.run_forever at 0x7fb328211e50>
+    │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+    └ <tornado.platform.asyncio.AsyncIOMainLoop object at 0x7fb348f564f0>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/asyncio/base_events.py", line 601, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7fb3282179d0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/asyncio/base_events.py", line 1905, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7fb34821edc0>
+    └ <Handle <TaskWakeupMethWrapper object at 0x7fb32882b6d0>(<Future finis...bf0>, ...],))>)>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskWakeupMethWrapper object at 0x7fb32882b6d0>(<Future finis...bf0>, ...],))>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskWakeupMethWrapper object at 0x7fb32882b6d0>(<Future finis...bf0>, ...],))>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskWakeupMethWrapper object at 0x7fb32882b6d0>(<Future finis...bf0>, ...],))>)>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/ipykernel/kernelbase.py", line 510, in dispatch_queue
+    await self.process_one()
+          │    └ <function Kernel.process_one at 0x7fb3286efee0>
+          └ <ipykernel.ipkernel.IPythonKernel object at 0x7fb32875e6d0>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/ipykernel/kernelbase.py", line 499, in process_one
+    await dispatch(*args)
+          │         └ ([<zmq.sugar.frame.Frame object at 0x7fb348f77eb0>, <zmq.sugar.frame.Frame object at 0x7fb3483ee930>, <zmq.sugar.frame.Frame ...
+          └ <bound method Kernel.dispatch_shell of <ipykernel.ipkernel.IPythonKernel object at 0x7fb32875e6d0>>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/ipykernel/kernelbase.py", line 406, in dispatch_shell
+    await result
+          └ <coroutine object Kernel.execute_request at 0x7fb328f2f3c0>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/ipykernel/kernelbase.py", line 730, in execute_request
+    reply_content = await reply_content
+                          └ <coroutine object IPythonKernel.do_execute at 0x7fb320bf4cc0>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/ipykernel/ipkernel.py", line 383, in do_execute
+    res = shell.run_cell(
+          │     └ <function ZMQInteractiveShell.run_cell at 0x7fb348f4e550>
+          └ <ipykernel.zmqshell.ZMQInteractiveShell object at 0x7fb32875ec10>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/ipykernel/zmqshell.py", line 528, in run_cell
+    return super().run_cell(*args, **kwargs)
+                             │       └ {'store_history': True, 'silent': False, 'cell_id': None}
+                             └ ('my_function(0)',)
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/IPython/core/interactiveshell.py", line 2881, in run_cell
+    result = self._run_cell(
+             │    └ <function InteractiveShell._run_cell at 0x7fb328542ee0>
+             └ <ipykernel.zmqshell.ZMQInteractiveShell object at 0x7fb32875ec10>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/IPython/core/interactiveshell.py", line 2936, in _run_cell
+    return runner(coro)
+           │      └ <coroutine object InteractiveShell.run_cell_async at 0x7fb320c6e9c0>
+           └ <function _pseudo_sync_runner at 0x7fb328531940>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/IPython/core/async_helpers.py", line 129, in _pseudo_sync_runner
+    coro.send(None)
+    │    └ <method 'send' of 'coroutine' objects>
+    └ <coroutine object InteractiveShell.run_cell_async at 0x7fb320c6e9c0>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/IPython/core/interactiveshell.py", line 3135, in run_cell_async
+    has_raised = await self.run_ast_nodes(code_ast.body, cell_name,
+                       │    │             │        │     └ '/var/folders/qg/0sfc2v8d71jcfr2mk24wj2w80000gp/T/ipykernel_9144/41096698.py'
+                       │    │             │        └ [<ast.Expr object at 0x7fb3092e4220>]
+                       │    │             └ <ast.Module object at 0x7fb3092e4040>
+                       │    └ <function InteractiveShell.run_ast_nodes at 0x7fb328543280>
+                       └ <ipykernel.zmqshell.ZMQInteractiveShell object at 0x7fb32875ec10>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/IPython/core/interactiveshell.py", line 3338, in run_ast_nodes
+    if await self.run_code(code, result, async_=asy):
+             │    │        │     │              └ False
+             │    │        │     └ <ExecutionResult object at 7fb3209c07f0, execution_count=45 error_before_exec=None error_in_exec=None info=<ExecutionInfo obj...
+             │    │        └ <code object <cell line: 1> at 0x7fb320e03c90, file "/var/folders/qg/0sfc2v8d71jcfr2mk24wj2w80000gp/T/ipykernel_9144/41096698...
+             │    └ <function InteractiveShell.run_code at 0x7fb328543310>
+             └ <ipykernel.zmqshell.ZMQInteractiveShell object at 0x7fb32875ec10>
+  File "/opt/anaconda3/envs/chemchem/lib/python3.9/site-packages/IPython/core/interactiveshell.py", line 3398, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+         │         │    │               │    └ {'__name__': '__main__', '__doc__': 'Automatically created module for IPython interactive environment', '__package__': None, ...
+         │         │    │               └ <ipykernel.zmqshell.ZMQInteractiveShell object at 0x7fb32875ec10>
+         │         │    └ <property object at 0x7fb328540090>
+         │         └ <ipykernel.zmqshell.ZMQInteractiveShell object at 0x7fb32875ec10>
+         └ <code object <cell line: 1> at 0x7fb320e03c90, file "/var/folders/qg/0sfc2v8d71jcfr2mk24wj2w80000gp/T/ipykernel_9144/41096698...
+
+> File "/var/folders/qg/0sfc2v8d71jcfr2mk24wj2w80000gp/T/ipykernel_9144/41096698.py", line 1, in <cell line: 1>
+    my_function(0)
+    └ <function my_function at 0x7fb320c619d0>
+
+  File "/var/folders/qg/0sfc2v8d71jcfr2mk24wj2w80000gp/T/ipykernel_9144/4264242585.py", line 3, in my_function
+    return 1 / x
+               └ 0
+
+ZeroDivisionError: division by zero
+2022-10-27 14:14:29.602 | INFO     | __main__:<cell line: 3>:3 - Contextualize your logger easily
+2022-10-27 14:14:29.609 | INFO     | __main__:<cell line: 4>:4 - Inline binding of extra attribute
+2022-10-27 14:14:29.612 | INFO     | __main__:<cell line: 5>:5 - Use kwargs to add context during formatting: anybody
+2022-10-27 14:15:32.994 | INFO     | __main__:<cell line: 2>:2 - product page opened
+2022-10-27 14:15:33.004 | INFO     | __main__:<cell line: 3>:3 - product updated
+2022-10-27 14:15:33.010 | INFO     | __main__:<cell line: 4>:4 - product page closed
+2022-10-27 14:15:36.261 | INFO     | __main__:<cell line: 2>:2 - product page opened
+2022-10-27 14:15:36.265 | INFO     | __main__:<cell line: 3>:3 - product updated
+2022-10-27 14:15:36.268 | INFO     | __main__:<cell line: 4>:4 - product page closed
