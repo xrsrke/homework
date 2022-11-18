@@ -1,0 +1,10 @@
+// Chemistry
+digraph {
+	mass [label=Mass]
+	mole [label=Mole]
+	pressure [label=Pressure]
+	volume [label=Volume]
+	temperature [label=Temperature]
+	mass -> mole
+	mass -> mole
+}
