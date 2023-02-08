@@ -1,0 +1,5 @@
+An AI has designed anti-microbial proteins that were then tested in real life and shown to work. The same approach could eventually be used to make new medicines.
+
+Proteins are made of chains of amino acids. The sequence of those acids determine the protein’s shape and function.
+
+Ali Madani at Profluent, a biotechnology start-up in California, and his colleagues used an AI to design millions of new proteins, then created a small sample of those to test whether they worked.
